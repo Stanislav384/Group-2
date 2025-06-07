@@ -6,43 +6,40 @@ body {
   background-size: cover;
   color: white;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 80px 50px;
 }
 
 .weather-container {
   text-align: left;
-  width: 500px;     
-  padding: 2em;
-  background: rgba(0, 0, 0, 0.3); 
+  width: 350px; 
+  padding: 1.2em;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  backdrop-filter: blur(1px);
-  height: 500px;
+  backdrop-filter: blur(4px);
 }
 
 .city {
-  font-size: 1.5em;    
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
 
 .temperature {
-  font-size: 3em;             
+  font-size: 2.5em;
   margin: 0.2em 0;
 }
 
 .description {
-  font-size: 1em;
+  font-size: 0.9em;
   margin-bottom: 1em;
 }
 
 .forecast {
-  margin-top: 1em;
+  margin-top: 1.2em;
   padding: 1em;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(8px);
 }
 
 .forecast-day {
@@ -68,7 +65,7 @@ body {
 .button {
   margin-top: 1em;
   background: rgba(255, 255, 255, 0.3);
-  padding: 0.7em 1.5em;
+  padding: 0.6em 1.2em;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
@@ -105,4 +102,7 @@ body {
 
 .forecast-day .temp {
   font-size: 1.3em;
+}
+footer{
+    text-align: left;
 }
