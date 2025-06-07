@@ -1,188 +1,102 @@
-body{
-      background-image: url(https://preview.redd.it/8k-collection-7680x4320-v0-5c9a42xdjtfa1.jpg?width=640&crop=smart&auto=webp&s=b9e2f045c1bbbe524601000c08b62d597140fde5);
-      margin: 0;
-      padding: 0;
-}
-.card {
-  width: 280px;
-  height: 150px;
-  background: rgb(17, 4, 134);
-  border-radius: 15px;
-  box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
-  display: flex;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
   color: white;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.card:hover {
-  box-shadow: rgb(0,0,0) 5px 10px 50px ,rgb(0,0,0) -5px 0px 250px;
-}
-
-.time-text {
-  font-size: 50px;
-  margin-top: 0px;
-  margin-left: 15px;
-  font-weight: 600;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.time-sub-text {
-  font-size: 15px;
-  margin-left: 5px;
-}
-
-.day-text {
-  font-size: 18px;
-  margin-top: 0px;
-  margin-left: 15px;
-  font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.moon {
-  font-size: 20px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover > .moon {
-  font-size: 23px;
-}
-.card2Container {
-  width: fit-content;
-  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.card2 {
-  position: relative;
-  width: 220px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
-  border-radius: 10px;
-  backdrop-filter: blur(30px);
-  background-color: rgba(65, 65, 65, 0.308);
-  border: 1px solid rgba(255, 255, 255, 0.089);
-  cursor: pointer;
+.weather-container {
+  text-align: center;
+  max-width: 400px;
 }
 
 .city {
-  font-weight: 700;
-  font-size: 0.9em;
-  letter-spacing: 1.2px;
-  color: white;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.weather {
-  font-weight: 500;
-  font-size: 200;
-  letter-spacing: 1.2px;
-  color: rgb(197, 197, 197);
+.temperature {
+  font-size: 6em;
+  margin: 0.2em 0;
 }
 
-.temp {
-  font-size: 1.8em;
-  color: white;
+.description {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
-.minmaxContainer {
-  width: 100%;
+.forecast {
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.forecast-day {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.min,
-.max {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0px 20px;
-  gap: 4px;
+.forecast-day:last-child {
+  border-bottom: none;
 }
 
-.max {
-  align-items: flex-start;
-  border-left: 2px solid white;
+.forecast-day span {
+  font-size: 1em;
 }
 
-.maxHeading,
-.minHeading {
-  font-size: 0.7em;
-  font-weight: 600;
+.forecast-day .temp {
+  font-size: 0.9em;
+}
+
+.button {
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.7em 1.5em;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
   color: white;
 }
 
-.maxTemp,
-.minTemp {
-  font-size: 0.6em;
-  font-weight: 500;
-  color: rgb(197, 197, 197);
+.button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.forecast {
+  margin-top: 2em;
+  padding: 1.5em;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
-.card2Container::before {
-  width: 100px;
-  height: 100px;
-  content: "";
-  position: absolute;
-  background-color: rgb(144, 161, 255);
-  z-index: -1;
-  border-radius: 50%;
-  left: 100px;
-  top: 50px;
-  transition: all 1s;
+.forecast-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.card2Container:hover::before {
-  transform: translate(-50px, 50px);
+.forecast-day:last-child {
+  border-bottom: none;
 }
 
-button {
- appearance: none;
- background-color: black;
- border: 0.125em solid #000000;
- border-radius: 0.9375em;
- box-sizing: border-box;
- color: #605a5a;
- cursor: pointer;
- display: inline-block;
- font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
- font-size: 16px;
- font-weight: 600;
- line-height: normal;
- margin: 0;
- min-height: 3.75em;
- min-width: 0;
- outline: none;
- padding: 1em 2.3em;
- text-align: center;
- text-decoration: none;
- transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- will-change: transform;
- position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.forecast-day span {
+  font-size: 1.5em;
 }
-button:hover{
-  background-color: white;
+
+.forecast-day .temp {
+  font-size: 1.3em;
 }
