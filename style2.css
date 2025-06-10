@@ -62,7 +62,7 @@ body {
   font-size: 1.1em;
 }
 
-.button {
+.button2 {
   margin-top: 1em;
   background: rgba(255, 255, 255, 0.3);
   padding: 0.6em 1.2em;
@@ -73,7 +73,7 @@ body {
   color: white;
 }
 
-.button:hover {
+.button2:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 .forecast {
@@ -105,4 +105,21 @@ body {
 }
 footer{
     text-align: left;
+}
+.settings-button {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* ⬅ Замість left */
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.6em 1.2em;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  z-index: 1000;
+}
+
+.settings-button:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
