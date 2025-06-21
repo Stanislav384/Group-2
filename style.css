@@ -2,41 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background: url('background.jpg') no-repeat center center;
   background-size: cover;
   color: white;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .weather-container {
   text-align: left;
-  width: 500px;     
-  padding: 2em;
-  background: rgba(0, 0, 0, 0.3); 
-  border-radius: 20px;
-  backdrop-filter: blur(1px);
-  height: 500px;
+  width: 350px; 
+  padding: 1.2em;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 .city {
-  font-size: 1.5em;    
+  font-size: 1.5em;   
   font-weight: bold;
   margin-bottom: 0.2em;
 }
 
 .temperature {
-  font-size: 3em;             
+  font-size: 3.5em;          
   margin: 0.2em 0;
 }
 
 .description {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 1em;
 }
 
 .forecast {
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 1em;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.2);
@@ -72,10 +71,15 @@ body {
   cursor: pointer;
   border: none;
   color: white;
+  transform: none;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .button:hover {
   background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 .forecast {
   margin-top: 2em;
@@ -107,7 +111,7 @@ body {
 .settings-button {
   position: absolute;
   top: 20px;
-  right: 20px; /* ⬅ Замість left */
+  right: 20px;
   background: rgba(255, 255, 255, 0.3);
   padding: 0.6em 1.2em;
   border-radius: 10px;
@@ -116,8 +120,29 @@ body {
   border: none;
   color: white;
   z-index: 1000;
+  transform: none;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
-.settings-button:hover {
-  background: rgba(255, 255, 255, 0.5);
+.settings-button:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  color: white;
+  padding: 0.8em 1.5em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+
+
+
