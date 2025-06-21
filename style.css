@@ -14,14 +14,16 @@ body {
   text-align: left;
   width: 350px; 
   padding: 1.2em;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+  background: rgba(93, 205, 243, 0.182);
+  backdrop-filter: blur(7px);
 }
 
-.city {
-  font-size: 1.5em;   
-  font-weight: bold;
-  margin-bottom: 0.2em;
+.info {
+  margin-top: 2em;
+  padding: 1.5em;
+  background: rgba(75, 146, 170, 0.182);
+  backdrop-filter: blur(7px);
+  border-radius: 15px;
 }
 
 .temperature {
@@ -63,8 +65,9 @@ body {
 }
 
 .button {
+  margin-left: 6em;
   margin-top: 1em;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(175, 235, 255, 0.256);
   padding: 0.7em 1.5em;
   border-radius: 10px;
   font-weight: bold;
@@ -77,7 +80,6 @@ body {
 }
 
 .button:hover {
-  background: rgba(255, 255, 255, 0.5);
   transform: scale(1.05);
   transition-duration: 0.5s;
 }
@@ -85,7 +87,7 @@ body {
   margin-top: 2em;
   padding: 1.5em;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(75, 146, 170, 0.182);
   backdrop-filter: blur(10px);
 }
 
@@ -112,7 +114,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(104, 202, 235, 0.182);
   padding: 0.6em 1.2em;
   border-radius: 10px;
   font-weight: bold;
@@ -148,4 +150,12 @@ footer {
   vertical-align: middle;
   fill: #ff9800;
   flex-shrink: 0;
+}
+
+.additional-info {
+  margin-top: 2em;
+  padding: 1.5em;
+  background: rgba(75, 146, 170, 0.182);
+  backdrop-filter: blur(7px);
+  border-radius: 15px;
 }
