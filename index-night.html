@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style-night.css" />
+</head>
+<body>
+  <div class="weather-container">
+    <div class="info">
+      <div class="city">New York</div>
+      <div class="temperature">10°</div>
+      <div class="description">Cloudy 16°/10°</div>
+    </div>
+
+    <div class="additional-info">
+      <div class="forecast-day">
+        <span>Feels like</span>
+        <span class="temp">8°</span>
+      </div>
+      <div class="forecast-day">
+        <span>Humidity</span>
+        <span class="temp">78%</span>
+      </div>
+      <div class="forecast-day">
+        <span>Wind</span>
+        <span class="temp">14 km/h</span>
+      </div>
+      <div class="forecast-day">
+        <span>Pressure</span>
+        <span class="temp">1012 hPa</span>
+      </div>
+      <div class="forecast-day">
+        <span>Sunrise</span>
+        <span class="temp">5:45 AM</span>
+      </div>
+      <div class="forecast-day">
+        <span>Sunset</span>
+        <span class="temp">8:15 PM</span>
+      </div>
+    </div>
+
+    <div class="forecast" id="forecast">
+      <div class="forecast-day">
+        <span>SAT</span>
+        <span class="temp">10° ⟶ 16°</span>
+      </div>
+      <div class="forecast-day">
+        <span>SUN</span>
+        <span class="temp">10° ⟶ 20°</span>
+      </div>
+      <div class="forecast-day">
+        <span>MON</span>
+        <span class="temp">13° ⟶ 22°</span>
+      </div>
+      <div class="extra-days" id="extra-days">
+        <div class="forecast-day">
+          <span>TUE</span>
+          <span class="temp">15° ⟶ 20°</span>
+        </div>
+        <div class="forecast-day">
+          <span>WED</span>
+          <span class="temp">10° ⟶ 19°</span>
+        </div>
+        <div class="forecast-day">
+          <span>THU</span>
+          <span class="temp">9° ⟶ 15°</span>
+        </div>
+      </div>
+      <button class="button" id="toggleBtn">6-day forecast</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-info">
+      <span>MeteoVision Technologies •</span>
+      <span>Kyiv, Ukraine •</span>
+      <span>contact@meteovision.com •</span>
+      <span>+380 (44) 123-45-67</span>
+    </div>
+    <div class="footer-info">
+      <span>© 2025 MeteoVision. All rights reserved</span>
+    </div>
+  </footer>
+
+  <button class="settings-button">Settings</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

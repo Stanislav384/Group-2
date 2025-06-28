@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url('dark.hmari.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -17,7 +17,7 @@ body {
   width: 90%;
   max-width: 360px;
   padding: 1.2em;
-  background: rgba(93, 205, 243, 0.182);
+  background: rgba(28, 67, 81, 0.182);
   backdrop-filter: blur(7px);
   border-radius: 15px;
   box-sizing: border-box;
@@ -26,7 +26,7 @@ body {
 .info,
 .additional-info,
 .forecast {
-  background: rgba(75, 146, 170, 0.182);
+  background: rgba(43, 90, 106, 0.182);
   backdrop-filter: blur(7px);
   border-radius: 15px;
   padding: 1em;
@@ -64,7 +64,7 @@ body {
 .button2 {
   display: block;
   margin: 1em auto 0;
-  background: rgba(175, 235, 255, 0.3);
+  background: rgba(43, 90, 106, 0.182);
   padding: 0.7em 1.5em;
   border-radius: 10px;
   font-weight: bold;
@@ -82,7 +82,7 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: rgba(104, 202, 235, 0.182);
+  background: rgba(43, 90, 106, 0.182);
   padding: 0.6em 1.2em;
   border-radius: 10px;
   font-weight: bold;
@@ -137,7 +137,7 @@ footer {
   .info,
   .additional-info,
   .forecast {
-    background: rgba(75, 146, 170, 0.182);
+    background: rgba(43, 90, 106, 0.182);
     backdrop-filter: blur(7px);
     border-radius: 15px;
     padding: 1em;
