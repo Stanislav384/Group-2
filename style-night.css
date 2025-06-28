@@ -26,7 +26,7 @@ body {
 .info,
 .additional-info,
 .forecast {
-  background: rgba(43, 90, 106, 0.182);
+  background: rgba(75, 146, 170, 0.182);
   backdrop-filter: blur(7px);
   border-radius: 15px;
   padding: 1em;
@@ -61,10 +61,10 @@ body {
   border-bottom: none;
 }
 
-.button {
+.button3 {
   display: block;
   margin: 1em auto 0;
-  background: rgba(43, 90, 106, 0.182);
+  background: rgba(175, 235, 255, 0.3);
   padding: 0.7em 1.5em;
   border-radius: 10px;
   font-weight: bold;
@@ -74,15 +74,15 @@ body {
   transition: transform 0.3s ease;
 }
 
-.button:hover {
+.button3:hover {
   transform: scale(1.05);
 }
 
-.settings-button {
+.settings-button2 {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: rgba(43, 90, 106, 0.182);
+  background: rgba(104, 202, 235, 0.182);
   padding: 0.6em 1.2em;
   border-radius: 10px;
   font-weight: bold;
@@ -93,7 +93,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.settings-button:hover {
+.settings-button2:hover {
   transform: scale(1.05);
 }
 
@@ -208,12 +208,12 @@ footer {
     font-size: 1.5em;
   }
 
-  .button {
+  .button3 {
     font-size: 1.1em;
     padding: 1em 2em;
   }
 
-  .settings-button {
+  .settings-button2 {
     font-size: 1.1em;
     padding: 0.8em 1.5em;
   }

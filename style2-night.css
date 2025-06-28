@@ -61,7 +61,7 @@ body {
   border-bottom: none;
 }
 
-.button2 {
+.button4 {
   display: block;
   margin: 1em auto 0;
   background: rgba(43, 90, 106, 0.182);
@@ -74,11 +74,11 @@ body {
   transition: transform 0.3s ease;
 }
 
-.button:hover {
+.button4:hover {
   transform: scale(1.05);
 }
 
-.settings-button {
+.settings-button2 {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -93,7 +93,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.settings-button:hover {
+.settings-button2:hover {
   transform: scale(1.05);
 }
 
@@ -202,12 +202,12 @@ footer {
     font-size: 1.5em;
   }
 
-  .button {
+  .button4 {
     font-size: 1.1em;
     padding: 1em 2em;
   }
 
-  .settings-button {
+  .settings-button2 {
     font-size: 1.1em;
     padding: 0.8em 1.5em;
   }
